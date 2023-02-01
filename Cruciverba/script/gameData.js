@@ -10,7 +10,7 @@ var righeA=[`ABC${s}E`,`FGHIL`,`MNOPQ`,`RSTUV`,`XYKZA`];
 //Cruciverba B (riga1, riga2....)
 var righeB=[`${s}${s}C${s}`,`EFGH`,`${s}${s}M${s}`,`${s}${s}Q${s}`];
 //Cruciverba Esempio
-var righeEsempio=
+var righeESEMPIO=
 [
     `${s}${s}${s}${s}${s}${s}${s}${s}${s}${s}${s}D${s}`,
     `${s}${s}${s}DEMOCRAZIA`,
