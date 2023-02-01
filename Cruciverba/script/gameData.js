@@ -13,11 +13,11 @@ var righeB=[`${s}${s}C${s}`,`EFGH`,`${s}${s}M${s}`,`${s}${s}Q${s}`];
 var righeEsempio=
 [
     `${s}${s}${s}${s}${s}${s}${s}${s}${s}${s}${s}D${s}`,
-    `${s}${s}${s}DEMOCTRATICA`,
+    `${s}${s}${s}DEMOCRAZIA`,
     `${s}${s}${s}O${s}${s}${s}${s}E${s}${s}R${s}`,
-    `${s}LAVORO${s}P${s}${s}I`,
-    `${s}${s}${s}E${s}${s}${s}${s}${s}U${s}${s}T${s}`,
-    `${s}${s}${s}R${s}${s}${s}${s}${s}B${s}${s}T${s}`,
+    `${s}LAVORO${s}P${s}${s}I${s}${s}`,
+    `${s}${s}${s}E${s}${s}${s}${s}U${s}${s}T${s}`,
+    `${s}${s}${s}R${s}${s}${s}${s}B${s}${s}T${s}`,
     `LIBERTÀ${s}B${s}${s}I${s}`,
     `${s}${s}${s}${s}${s}${s}${s}${s}L${s}${s}${s}${s}`,
     `${s}${s}${s}${s}${s}${s}${s}${s}I${s}${s}${s}${s}`,
