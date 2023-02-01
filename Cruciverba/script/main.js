@@ -59,4 +59,13 @@ function generate(x,y, type){
         document.getElementById("game").innerHTML+=`<br>`
     }
     document.getElementById("game").innerHTML+=`<button type="submit" class="checkSolutionbtn" onclick="checkSolution('${type}','${x}','${y}')">Controlla</button>`
+    //Mantengo premuto il bottone per far vedere l'animazione
+    let btn = document.querySelector(".checkSolutionbtn");
+    btn.addEventListener("click",()=>{
+        btn.classList.add('btnActive');
+        setTimeout(()=>{
+            btn.classList.remove('btnActive');
+        },1600)
+    })
+    
 }
