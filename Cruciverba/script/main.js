@@ -17,7 +17,7 @@ for(let i=0;i<cruciverba.length; i++){
     let y = cruciverba[i].y;
     let nome = cruciverba[i].Nome;
     document.getElementById(element).addEventListener("click", () => {
-        generate(x, y, nome);
+        generate(x, y, nome.toUpperCase());
     });
 }
 
