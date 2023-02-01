@@ -5,6 +5,7 @@ const cruciverba=[
     {"Nome":"Esempio","x":13,"y":11}
 ]
 var s="\u9824";
+//IMPORTANTE! il nome della variabile deve essere righe+NOME
 //Cruciverba A (riga1, riga2....)
 var righeA=[`ABC${s}E`,`FGHIL`,`MNOPQ`,`RSTUV`,`XYKZA`];
 //Cruciverba B (riga1, riga2....)
