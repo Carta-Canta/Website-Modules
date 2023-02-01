@@ -77,8 +77,16 @@ body{
 }
 .dropdownBtn{
     border:none;
-    background:white;
+    background: #fff;
 
+}
+.checkSolutionbtn{
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 10px 32px; /*altezza larghezza*/
+    font-size: 14px;
+    background: #fff;
+    font-weight: bolder;
 }
 .clearfix{
     clear: both;

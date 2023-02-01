@@ -58,5 +58,5 @@ function generate(x,y, type){
         }
         document.getElementById("game").innerHTML+=`<br>`
     }
-    document.getElementById("game").innerHTML+=`<button type="submit" onclick="checkSolution('${type}','${x}','${y}')">Controlla</button>`
+    document.getElementById("game").innerHTML+=`<button type="submit" class="checkSolutionbtn" onclick="checkSolution('${type}','${x}','${y}')">Controlla</button>`
 }
