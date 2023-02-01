@@ -39,9 +39,9 @@ body{
 
 [id^="x"]{ /*Stile tabella*/
     text-align: center;
-    width: 45px;
-    height: 45px;
-    font-size: 45px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
 }
 .space{
     border: 2px solid #fff;
