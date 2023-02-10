@@ -40,8 +40,23 @@ window.addEventListener("click", (event)=>{
 
 //Genero la tabella del cruciverba in base ai parametri passati alla funzione
 function generate(x,y, type){
+    document.getElementById("game").style.display="none";
+    document.getElementById("definizioni").style.display="none";
     document.getElementById("game").replaceChildren();
+    document.getElementById("definizioni").replaceChildren();
+
     let j=0;
+    const definitionJSONarray = definizioni[0][type.toString()];
+    let definitionLength = definitionJSONarray.orizzontali.length;
+    document.getElementById("definizioni").insertAdjacentHTML("beforeend",`<div class="definitionType"><b>ORIZZONTALI:</b></div>`)
+    for(let i=0; i<definitionLength; i++){ //orizzontali
+        document.getElementById("definizioni").insertAdjacentHTML("beforeend",`${i+1}. ${definitionJSONarray.orizzontali[i].text}<br>`)
+    }
+    definitionLength = definitionJSONarray.verticali.length;
+    document.getElementById("definizioni").insertAdjacentHTML("beforeend",`<div class="definitionType"><b>VERTICALI:</b></div>`)
+    for(let i=0; i<definitionLength; i++){ //orizzontali
+        document.getElementById("definizioni").insertAdjacentHTML("beforeend",`${i+1}. ${definitionJSONarray.verticali[i].text}<br>`)
+    }
     let sol = eval("righe"+type);
     for(let i=0; i<y; i++){
         for(let k=0; k<x; k++){
@@ -67,5 +82,8 @@ function generate(x,y, type){
             btn.classList.remove('btnActive');
         },1600)
     })
+
+    document.getElementById("game").style.display="block";
+    document.getElementById("definizioni").style.display="block";
     
 }

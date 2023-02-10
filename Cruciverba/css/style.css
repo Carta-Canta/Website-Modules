@@ -39,9 +39,9 @@ body{
 
 [id^="x"]{ /*Stile tabella*/
     text-align: center;
-    width: 30px;
-    height: 30px;
-    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
 }
 .space{
     border: 2px solid #fff;
@@ -98,6 +98,19 @@ body{
 
 }
 /*Fine Stile bottone controlla (da modificare)*/
+
+/*Definizioni*/
+#game{
+    width: 60%;
+    float: right;
+    margin-left:0;
+}
+#definizioni{
+    width: 35%;
+    float: left;
+    margin-left:2%;
+}
+
 .clearfix{
     clear: both;
 }
