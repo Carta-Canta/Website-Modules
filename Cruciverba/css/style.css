@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 1310px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testo{
+    margin-top:150px;
+}
+/*Navbar*/
+.header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    right: auto;
+    padding: 20px;
+    background: cyan;
+}
+.header .dropdownBtn{
+    background: cyan;
+}
+.menu{
+    list-style: none;
+}
+.menu li{
+    display:inline-block;
+    margin-right: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color:#000000;
+}
+.menu a:hover , .menu button:hover{
+    background: cyan;
+}
+
+[id^="x"]{ /*Stile tabella*/
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+}
+.space{
+    border: 2px solid #fff;
+    background: #fff;
+    color: transparent;
+    outline: none;
+}
+.space::selection{
+    color: transparent;
+}
+#game{
+    text-align: center;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2); /*Effetto sul bordo del box*/
+    background-color: #fff;
+}
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+.caret-down{
+    float: right;
+}
+.dropdownBtn{
+    border:none;
+    background: #fff;
+
+}
+/*Stile bottone controlla (da modificare)*/
+.checkSolutionbtn{
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 10px 32px; /*altezza larghezza*/
+    font-size: 14px;
+    background: rgba(172, 255, 47, 1);
+    font-weight: bolder;
+}
+.btnActive{
+    animation: btnClick 0.8s infinite alternate; /*guardare da riga 62 in poi del main.js*/
+}
+@keyframes btnClick{
+    from{}
+    to{background: rgb(48, 217, 48);}
+
+}
+/*Fine Stile bottone controlla (da modificare)*/
+
+/*Definizioni*/
+#game{
+    width: 60%;
+    float: right;
+    margin-left:0;
+}
+#definizioni{
+    width: 35%;
+    float: left;
+    margin-left:2%;
+}
+
+.clearfix{
+    clear: both;
+}
