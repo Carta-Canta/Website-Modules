@@ -50,6 +50,9 @@ function checkSolution(type, maxX, maxY){
         }
     }
     if(giusto){
-        alert("Il cruciverba è giusto");
+        setTimeout(()=>{
+            alert("Il cruciverba è giusto");
+        },100);
+        
     }
 }
