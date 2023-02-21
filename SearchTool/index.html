@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" spellcheck="false" id="query" placeholder="Cerca">
+        <button type="submit" id="searchBtn">
+            Cerca
+            <div class="loading" id="loading"></div>
+            <div id="spunta">&#10004;</div>
+            <div id="err">&#x2716;</div>
+            <div class="clearfix"></div>
+        </button>
+        <div id="contatoreRisultati"></div>
+        <div class="articoli" id="articoli">
+            <div id="art1">
+                <h2>Articolo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa corrupti sapiente animi, rem quaerat adipisci omnis tenetur facilis? Quos, natus! Architecto, illo nostrum. Voluptas explicabo eos molestiae doloremque voluptatem?</p>
+            </div>
+            <div id="art2">
+                <h2>Articolo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa corrupti sapiente animi, rem quaerat adipisci omnis tenetur facilis? Quos, natus! Architecto, illo nostrum. Voluptas explicabo eos molestiae doloremque voluptatem?</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="script/searchEngine.js"></script>
+</body>
+</html>
