@@ -17,7 +17,6 @@ function search(){
         //Con il timeout evito che in caso ci sia una grande quantità di articoli lo spinner non giri
         setTimeout(()=>{
             let pageElements = document.getElementById("articoli").children;
-            let tag = "";
             let element = "";
             let elementID = "";
             let content=""; //testo
@@ -27,15 +26,12 @@ function search(){
                 elementID = pageElements[i].id;
                 element = document.getElementById(elementID).children;
                 for (var k = 0; k<element.length; k++){
-                    tag = element[k].tagName;
-                    if(tag=="H2" || tag=="P"){
-                        content = element[k].innerText;
-                        if(content.toLowerCase().includes(query.toLowerCase())){ 
-                            let regExp = new RegExp("(" + query + ")(?!([^<]+)?>)", "gi"); // ignoro i tag con regexp;
-                            replace = element[k].innerHTML.replace(regExp, '<span class="found">$&</span>'); //mantengo le maiuscole e le minuscole
-                            document.getElementById(elementID).children[k].innerHTML=`${replace}`;
-                            results.push(elementID);
-                        }
+                    content = element[k].innerText;
+                    if(content.toLowerCase().includes(query.toLowerCase())){ 
+                        let regExp = new RegExp("(" + query + ")(?!([^<]+)?>)", "gi"); // ignoro i tag con regexp;
+                        replace = element[k].innerHTML.replace(regExp, '<span class="found">$&</span>'); //mantengo le maiuscole e le minuscole
+                        document.getElementById(elementID).children[k].innerHTML=`${replace}`;
+                        results.push(elementID);
                     } 
                 }
             }
