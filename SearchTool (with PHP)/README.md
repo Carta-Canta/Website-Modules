@@ -8,7 +8,7 @@ Questa versione è stata completamente adattata al sito e usa PHP per ottenere l
 
 ![example](only%20for%20Readme/1.png)
 
-2) Nel file [index.html](https://github.com/Carta-Canta/Website/blob/2.0/html/articoli/index.html) aggiungere lo script [searchEngine.js](searchEngine.js/only%20for%20Readme/1.png) 
+2) Nel file [index.html](https://github.com/Carta-Canta/Website/blob/2.0/html/articoli/index.html) aggiungere lo script [searchEngine.js](searchEngine.js) 
 
 3) Nel file [index.html](https://github.com/Carta-Canta/Website/blob/2.0/html/articoli/index.html) aggiungere un div contenitore con id articoli ed ad al div di ogni articolo di classe container is-fluid assegnare l'id in base al nome del file dell'articolo (Es pagina articolo: articolo1.html -> id:articolo1)
 
