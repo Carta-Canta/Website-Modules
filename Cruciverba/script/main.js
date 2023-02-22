@@ -3,7 +3,7 @@ const dropdown=document.getElementById("games");
 let element="";
 for(let i=0;i<cruciverba.length; i++){
     element = "element"+i;
-    dropdown.innerHTML+=`<a id=${element} href="#">${cruciverba[i].Nome}</a>`;
+    dropdown.innerHTML+=`<a id=${element} href="#">${cruciverba[i].NomeVisualizzato}</a>`;
 }
 //Imposto la larghezza minima del contenuto della dropdown in base alla larghezza del bottone
 let btn = document.querySelector(".dropdownBtn");

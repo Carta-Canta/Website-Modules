@@ -1,13 +1,17 @@
 //Dettagli cruciverba (Nome, numero caselle)
 const cruciverba=[
-    {"Nome":"Base1","x":21,"y":19},
-    {"Nome":"Intermedio1","x":16,"y":16},
-    {"Nome":"Avanzato1","x":25,"y":38}
+    {"NomeVisualizzato":"1", "Nome":"Base1","x":21,"y":19},
+    {"NomeVisualizzato":"2","Nome":"Intermedio1","x":16,"y":16},
+    {"NomeVisualizzato":"3","Nome":"Avanzato1","x":25,"y":38}
 ]
 const definizioni=
 [
     {
         "BASE1":{
+            "regole":
+            [
+                {"text":"In base alle definizioni date completa lo schema. Tutte le parole sono inerenti alla Costituzione Italiana, scrivile una lettere per casella dall’alto verso il basso e da sinistra verso destra."}
+            ],
             "orizzontali":
             [
                 {"text":"Organo rappresentativo a cui fu affidato il potere di deliberare la nuova Costituzione"},
@@ -22,6 +26,12 @@ const definizioni=
             ]
         },
         "INTERMEDIO1":{
+            "regole":
+            [
+                {"text":"Scrivere una lettera per casella"},
+                {"text":"Le parole possono essere scritte da sinistra verso destra e dall’alto verso il basso"},
+                {"text":"Scrivere le parole negli appositi spazi"}
+            ],
             "orizzontali":
             [
                 {"text":"Condizione in cui un individuo può esprimersi, pensare e agire"},
@@ -42,6 +52,11 @@ const definizioni=
             ]
         },
         "AVANZATO1":{
+            "regole":
+            [
+                {"text":"Trova le parole corrispondenti alle definizioni e scrivile da sinistra a destra e dall’alto In basso nelle caselle."},
+                {"text":"Una lettera per casella."}
+            ],
             "orizzontali":
             [
                 {"text":"Forma di Stato dell’Italia"},
@@ -76,6 +91,22 @@ const definizioni=
                 {"text":"Berlusconi,Salvini, Fratoianni … sono a capo di …"}
             ]
         }
+    }
+]
+
+const aiuti=
+[
+    {
+        "BASE1":
+        [
+        ],
+        "INTERMEDIO1":
+        [
+        ],
+        "AVANZATO1":
+        [
+            "x5,y2","x16,y9","x10,y15","x21,y27","x4,y28"
+        ]
     }
 ]
 
