@@ -14,6 +14,6 @@ Questa versione è stata completamente adattata al sito e usa PHP per ottenere l
 
 ![example1](only%20for%20Readme/2.png)
 
-4) Nei file di ogni articolo (articolo1.html ...) aggiungere un div contenitore di id articolo prima dei ```HTML <p class="title"></p>```
+4) Nei file di ogni articolo (articolo1.html ...) aggiungere un div contenitore di id articolo prima di ```<p class="title"></p>```
 
 ![example2](only%20for%20Readme/3.png)
