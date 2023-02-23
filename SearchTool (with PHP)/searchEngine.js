@@ -1,5 +1,6 @@
 let risultatoRicerca=""; // testo da mostrare in alto (Risultati ricerca: , La ricerca non ha prodotto risultati)
 let defaultPage=document.getElementById("articoli").innerHTML;
+let resultsLength=0;
 function search(text, query, divID){
     //Ricarico il div di default
     document.getElementById("articoli").innerHTML=defaultPage;
@@ -17,20 +18,16 @@ function search(text, query, divID){
         content = element[k].innerText;
         if (content.toLowerCase().includes(query.toLowerCase())) {
             results.push(elementID);
+            resultsLength++;
         }
     }
-    /*Codice per mostrare un messaggio sul risultato della ricerca*/
-    /*if(results.length!=0){
-        document.getElementById(il_div_che_volete).innerHTML="<h1>Risultati ricerca:</h1><br>";
-    }else{
-        document.getElementById(il_div_che_volete).innerHTML="<h1>La ricerca non ha prodotto risultati</h1><br>";
-    }*/
     for(let i=0; i<results.length; i++){
         document.getElementById(divID).style.display="";
         $("#" + divID + " *").css("display","");
     }
 }
 function beginSearch(){
+    resultsLength = 0;
     let pages="";
     let query = document.getElementById("query").value;
     if(query){
@@ -58,6 +55,12 @@ function beginSearch(){
                 }
             })
         });
+        /*Codice per mostrare un messaggio sul risultato della ricerca (invece di innerHTML potrebbe essere necessario usare insertAdiacentHTML*/
+        /*if(resultsLength!=0){
+            document.getElementById(il_div_che_volete).innerHTML="<h1>Risultati ricerca:</h1><br>";
+        }else{
+            document.getElementById(il_div_che_volete).innerHTML="<h1>La ricerca non ha prodotto risultati</h1><br>";
+        }*/
         $("#articoli").css("display","");
     }   
 }
@@ -67,7 +70,8 @@ $("#query").on('keyup', (e) => {
         try{
             beginSearch();
         }catch(e){
-            //Aggiungete il testo da mostrare in caso di errore
+            //Aggiungete il testo da mostrare in caso di errore (invece di innerHTML potrebbe essere necessario usare insertAdiacentHTML)
+            //document.getElementById(il_div_che_volete).innerHTML="";
             console.log(e);
         }   
     };
